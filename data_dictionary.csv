@@ -1,0 +1,23 @@
+column,dtype,description,example
+transaction_id,string,Unique transaction identifier,TXN_00001
+round_number,int,Experiment round 1..N,1
+customer_id,string,Customer identifier (repeat visits allowed),CUST_00042
+promotion_shown,categorical,MAB arm shown,discount_10
+discount_rate,float,Nominal discount rate (bundle uses effective rate),0.10
+conversion,binary,"1=purchase, 0=no purchase",1
+basket_size,int,Items purchased; 0 if no conversion,2
+base_price,float,Pre-discount list basket value,11.25
+price_charged,float,Revenue after promotion; 0 if no conversion,10.12
+cost,float,COGS; 0 if no conversion,5.40
+contribution_profit,float,MAB reward: price_charged - cost; 0 if no conversion,4.72
+order_method,categorical,"app, counter, kiosk",app
+dine_in_takeout,categorical,"dine_in, takeout, mobile_pickup",mobile_pickup
+time_of_day,categorical,"morning, afternoon, evening",afternoon
+day_of_week,categorical,Mon-Sun,Wed
+is_finals_week,binary,1 during finals period,0
+customer_type,categorical,"new, returning, loyalty_member",returning
+loyalty_membership,binary,1 if loyalty member,0
+weather,categorical,"sunny, cloudy, rainy",rainy
+queue_length,categorical,"short, medium, long",medium
+repeat_visit_this_week,int,Visits by customer in current week,3
+promotion_response_time,float,Seconds from offer to decision,3.2
