@@ -1,4 +1,4 @@
-# Campus Coffee MAB — Synthetic Pricing Data
+# Campus Coffee MAB: Synthetic Pricing Data
 
 Synthetic transaction data for a **University of Washington campus coffee shop** testing off-peak promotions via app, kiosk, or counter. Each row is one visit (purchase or not). Promotions are **multi-armed bandit arms**; the reward for learning is **`contribution_profit`** (revenue minus COGS, 0 if no purchase).
 
