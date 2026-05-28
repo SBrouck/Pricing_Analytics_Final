@@ -4,3 +4,7 @@ __pycache__/
 .venv/
 venv/
 .env
+
+# Bandit artifacts: keep repo lightweight (push code + CSVs only)
+bandit_outputs/**/*.png
+bandit_outputs_smoke/
